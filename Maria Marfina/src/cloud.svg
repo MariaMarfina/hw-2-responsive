@@ -14,9 +14,7 @@
         filter: url(#a);
       }</style>
 <filter id="a" x="561.81" y="355" width="86.812" height="65" filterUnits="userSpaceOnUse">
-<feOffset dy="1" in="SourceAlpha" result="offset"/>
 <feGaussianBlur result="blur"/>
-<feFlood flood-color="#cb70d6" flood-opacity=".75" result="flood"/>
 <feComposite in2="blur" operator="in" result="composite"/>
 <feBlend in="SourceGraphic" result="blend"/>
 </filter>

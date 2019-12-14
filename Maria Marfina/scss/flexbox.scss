@@ -1,18 +1,36 @@
+$blue: #06b3db;
+$dark-blue: #0585a3;
+$green: #4ed486;
+$dark-green: #3b9f65;
+$purple: #6139f6;
+$dark-purple: #4c2cc3;
+$yellow: #e3b63d;
+$dark-yellow: #ab8d3c;
+$red: #dc3d66;
+$dark-red: #b93457;
+$pink: #bd54cd;
+$dark-pink: #9341a0;
+
 @font-face {
   font-family: "AvenirNext";
   src: url("../fonts/AvenirNextCyr-Regular.woff2") format("woff2");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
+
 body {
   box-sizing: border-box;
+
   font-size: 16px;
   font-family: 'AvenirNext', Arial, Helvetica, sans-serif;
+
   background-color: green;
   background-image: url("../src/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center center; }
+  background-position: center center;
+}
 
 .main-container {
   position: absolute;
@@ -20,154 +38,199 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
+  
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  justify-content: center; }
+  justify-content: center;
+  
   @media (max-width: 410px) {
-    .main-container {
-      position: relative; } }
+    position: relative;
+  }
+
   @media (max-height: 450px) {
-    .main-container {
-      position: relative; } }
+    position: relative;
+  }
+}
 
 .weather-forecast {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+
   max-width: 615px;
-  box-shadow: 0 0 100px 30px black; }
+
+  box-shadow: 0 0 100px 30px black;
+
   @media (max-width: 615px) {
-    .weather-forecast {
-      max-width: 410px; } }
+    max-width: 410px;
+  }
+
   @media (max-width: 410px) {
-    .weather-forecast {
-      max-width: 205px;
-      margin: 30px 0; } }
+    max-width: 205px;
+    margin: 30px 0;
+  }
+
   @media (max-height: 450px) {
-    .weather-forecast {
-      margin: 30px 0; } }
+    margin: 30px 0;
+  }
+}
 
 .weather-forecast__content {
   display: flex;
   align-content: center;
   align-items: center;
+
   width: 205px;
-  height: 205px; }
+  height: 205px;
+}
 
 .weather-forecast__content_blue {
-  background-color: #06b3db; }
+  background-color: $blue;
+}
 
 .weather-forecast__content_green {
-  background-color: #4ed486; }
+  background-color: $green;
+}
 
 .weather-forecast__content_purple {
-  background-color: #6139f6; }
+  background-color: $purple;
+}
 
 .weather-forecast__content_yellow {
-  background-color: #e3b63d; }
+  background-color: $yellow;
+}
 
 .weather-forecast__content_red {
-  background-color: #dc3d66; }
+  background-color: $red;
+}
 
 .weather-forecast__content_pink {
-  background-color: #bd54cd; }
+  background-color: $pink;
+}
 
 .weather-forecast__content:hover {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+}
 
 .weather-forecast__content:hover .weather-forecast__main-info {
   display: flex;
   justify-content: center;
-  padding: 0; }
+  padding: 0;
+}
 
 .weather-forecast__content:hover .weather-forecast__img {
   width: 65px;
-  height: 65px; }
+  height: 65px;
+}
 
 .weather-forecast__content:hover .weather-forecast__paragraph {
-  display: none; }
+  display: none;
+}
 
 .weather-forecast__content:hover .weather-forecast__additional-info {
   display: flex;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 .weather-forecast__main-info {
   box-sizing: border-box;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
   padding-top: 45px;
   padding-bottom: 25px;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 .weather-forecast__img {
   width: 90px;
   height: 90px;
-  filter: drop-shadow(0 1px 0px rgba(0, 0, 0, 0.2)); }
+  filter: drop-shadow(0 1px 0px rgba(0,0,0,.2));
+}
 
 .weather-forecast__paragraph {
   font-weight: bold;
   text-transform: uppercase;
   text-align: left;
   color: white;
-  margin: 10px; }
+
+  margin: 10px;
+}
 
 .text-shadow_blue {
-  text-shadow: 0px 1px 0px #0585a3; }
+  text-shadow: 0px 1px 0px $dark-blue;
+}
 
 .weather-forecast__paragraph_green {
-  text-shadow: 0px 1px 0px #3b9f65; }
+  text-shadow: 0px 1px 0px $dark-green;
+}
 
 .weather-forecast__paragraph_purple {
-  text-shadow: 0px 1px 0px #4c2cc3; }
+  text-shadow: 0px 1px 0px $dark-purple;
+}
 
 .weather-forecast__paragraph_yellow {
-  text-shadow: 0px 1px 0px #ab8d3c; }
+  text-shadow: 0px 1px 0px $dark-yellow;
+}
 
 .weather-forecast__paragraph_red {
-  text-shadow: 0px 1px 0px #b93457; }
+  text-shadow: 0px 1px 0px $dark-red;
+}
 
 .weather-forecast__paragraph_pink {
-  text-shadow: 0px 1px 0px #9341a0; }
+  text-shadow: 0px 1px 0px $dark-pink;
+}
 
 .weather-forecast__additional-info {
   position: relative;
-  display: none; }
+  display: none;
+}
 
 .weather-forecast__additional-info_blue {
-  background-color: #0585a3; }
+  background-color: $dark-blue;
+}
 
 .weather-forecast__additional-info_green {
-  background-color: #3b9f65; }
+  background-color: $dark-green;
+}
 
 .weather-forecast__additional-info_purple {
-  background-color: #4c2cc3; }
+  background-color: $dark-purple;
+}
 
 .weather-forecast__additional-info_yellow {
-  background-color: #ab8d3c; }
+  background-color: $dark-yellow;
+}
 
 .weather-forecast__additional-info_red {
-  background-color: #b93457; }
+  background-color: $dark-red;
+}
 
 .weather-forecast__additional-info_pink {
-  background-color: #9341a0; }
+  background-color: $dark-pink;
+}
 
 .weather-forecast__additional-info-list {
   display: flex;
   align-items: center;
   justify-content: space-around;
+
   width: 100%;
   height: 100%;
   padding-left: 30px;
   padding-right: 30px;
+
   list-style: none;
-  margin: 0; }
+  margin: 0;
+}
 
 .weather-forecast__day {
   display: flex;
@@ -175,12 +238,14 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 30px;
-  height: 65px; }
+  height: 65px;
+}
 
 .weather-forecast__day-img {
   width: 25px;
   height: 22px;
-  filter: drop-shadow(0 1px 0px rgba(0, 0, 0, 0.2)); }
+  filter: drop-shadow(0 1px 0px rgba(0,0,0,.2));
+}
 
 .weather-forecast__day-name, .weather-forecast__day-tmp {
   font-weight: bold;
@@ -188,14 +253,18 @@ body {
   text-transform: uppercase;
   text-align: left;
   color: white;
-  filter: drop-shadow(0 1px 0px rgba(0, 0, 0, 0.2)); }
+  filter: drop-shadow(0 1px 0px rgba(0,0,0,.2));
+}
 
 .visually-hidden {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
+
   clip: rect(0 0 0 0);
-  overflow: hidden; }
+  overflow: hidden;
+}
