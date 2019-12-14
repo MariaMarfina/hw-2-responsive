@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 86.812 65" xmlns="http://www.w3.org/2000/svg">
+<metadata>
+<x:xmpmeta x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        " xmlns:x="adobe:ns:meta/">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about=""/>
+</rdf:RDF>
+</x:xmpmeta>
+</metadata>
+<defs>
+<style>.cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        filter: url(#a);
+      }</style>
+<filter id="a" x="561.81" y="355" width="86.812" height="65" filterUnits="userSpaceOnUse">
+<feOffset dy="1" in="SourceAlpha" result="offset"/>
+<feGaussianBlur result="blur"/>
+<feFlood flood-color="#cb70d6" flood-opacity=".75" result="flood"/>
+<feComposite in2="blur" operator="in" result="composite"/>
+<feBlend in="SourceGraphic" result="blend"/>
+</filter>
+</defs>
+<path class="cls-1" transform="translate(-561.81 -355)" d="m593.37 418.13a31.571 31.571 0 1 1 27.559-46.952 23.65 23.65 0 1 1 4.012 46.952h-31.571zm31.571-7.893a15.786 15.786 0 1 0-8.552-29.023 23.657 23.657 0 1 0-23.019 29.023h31.571z"/>
+</svg>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 80.907 74.812" xmlns="http://www.w3.org/2000/svg">
+<metadata>
+<x:xmpmeta x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        " xmlns:x="adobe:ns:meta/">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about=""/>
+</rdf:RDF>
+</x:xmpmeta>
+</metadata>
+<defs>
+<style>.cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        filter: url(#a);
+      }</style>
+<filter id="a" x="360.03" y="141.19" width="80.907" height="74.812" filterUnits="userSpaceOnUse">
+<feOffset dy="1" in="SourceAlpha" result="offset"/>
+<feGaussianBlur result="blur"/>
+<feFlood flood-color="#5ad696" flood-opacity=".75" result="flood"/>
+<feComposite in2="blur" operator="in" result="composite"/>
+<feBlend in="SourceGraphic" result="blend"/>
+</filter>
+</defs>
+<path class="cls-1" transform="translate(-360.03 -141.19)" d="m437.25 200.01h-73.533a3.677 3.677 0 1 1 0-7.353h73.533a3.677 3.677 0 0 1 0 7.353zm0-14.706h-73.533a3.677 3.677 0 0 1 0-7.354h73.533a3.677 3.677 0 0 1 0 7.354zm-18.384-22.06a14.608 14.608 0 0 0-7.967 2.373 22.035 22.035 0 0 0-43.506 4.98h-7.353a29.406 29.406 0 0 1 55.088-14.33 21.627 21.627 0 0 1 24.516 14.33h-8.054a14.69 14.69 0 0 0-12.724-7.353zm-55.149 44.12h73.533a3.677 3.677 0 0 1 0 7.353h-73.533a3.677 3.677 0 1 1 0-7.353z"/>
+</svg>

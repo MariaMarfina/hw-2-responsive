@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 84.813 88.969" xmlns="http://www.w3.org/2000/svg">
+<metadata>
+<x:xmpmeta x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        " xmlns:x="adobe:ns:meta/">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about=""/>
+</rdf:RDF>
+</x:xmpmeta>
+</metadata>
+<defs>
+<style>.cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        filter: url(#a);
+      }</style>
+<filter id="a" x="155.38" y="340.03" width="84.813" height="88.969" filterUnits="userSpaceOnUse">
+<feOffset dy="1" in="SourceAlpha" result="offset"/>
+<feGaussianBlur result="blur"/>
+<feFlood flood-color="#e9c14d" flood-opacity=".75" result="flood"/>
+<feComposite in2="blur" operator="in" result="composite"/>
+<feBlend in="SourceGraphic" result="blend"/>
+</filter>
+</defs>
+<path class="cls-1" transform="translate(-155.38 -340.03)" d="m237.03 380.87h-6.281a3.141 3.141 0 0 1 0-6.281h6.281a3.141 3.141 0 1 1 0 6.281zm-12.339-20.907a3.14 3.14 0 0 1-4.441-4.441l4.441-4.441a3.141 3.141 0 1 1 4.442 4.441zm-4.628 24.511a18.818 18.818 0 0 1-8.157 29.847v-6.881a12.548 12.548 0 1 0-13.087-21.4 18.822 18.822 0 1 0-30.881 18.271v7.719a25.111 25.111 0 0 1 19.667-45.833 18.82 18.82 0 0 1 32.458 18.277zm-17.579-19.307a12.521 12.521 0 0 0-8.893 3.691 25.264 25.264 0 0 1 8.841 9.193 18.012 18.012 0 0 1 12.38 2.077 12.544 12.544 0 0 0-12.328-14.961zm0-12.562a3.14 3.14 0 0 1-3.14-3.141v-6.281a3.141 3.141 0 1 1 6.281 0v6.281a3.141 3.141 0 0 1-3.141 3.141zm-22.207 7.358-4.441-4.441a3.14 3.14 0 1 1 4.441-4.441l4.442 4.441a3.141 3.141 0 1 1-4.442 4.441zm-2.917 42.891a3.141 3.141 0 1 1-3.141 3.14 3.14 3.14 0 0 1 3.141-3.14zm0 12.562a3.141 3.141 0 1 1-3.141 3.14 3.14 3.14 0 0 1 3.141-3.14zm12.562-6.281a3.141 3.141 0 1 1-3.14 3.14 3.14 3.14 0 0 1 3.14-3.14zm0 12.562a3.141 3.141 0 1 1-3.14 3.14 3.14 3.14 0 0 1 3.14-3.14zm12.562-18.843a3.141 3.141 0 1 1-3.14 3.14 3.14 3.14 0 0 1 3.14-3.14zm0 12.562a3.141 3.141 0 1 1-3.14 3.14 3.14 3.14 0 0 1 3.14-3.14z"/>
+</svg>
