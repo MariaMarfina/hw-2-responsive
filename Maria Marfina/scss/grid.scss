@@ -43,65 +43,136 @@ body {
 }
 
 .weather-forecast {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas: 
+    ".        .              .             .       ." 
+    ". content_blue   content_green content_purple ." 
+    ". content_yellow content_red   content_pink   ." 
+    ".        .              .             .       .";
+  grid-template-columns: 1fr 205px 205px 205px 1fr;
+  grid-template-rows: 1fr 205px 205px 1fr;
 
-  max-width: 615px;
-  height: 410px;
-  margin-top: auto;
-  margin-bottom: auto;
-
-  box-shadow: 0px 0 10px 10px rgba(0, 0, 0, .3);
+  margin: 30px 0;
+  height: auto;
 
   @media (max-width: 615px) {
-    max-width: 410px;
+    grid-template-areas: 
+      ".        .            .         ." 
+      ". content_blue content_green    ." 
+      ". content_purple content_yellow ." 
+      ". content_red content_pink      ." 
+      ".        .            .         .";
+    grid-template-columns: 1fr 205px 205px 1fr;
+    grid-template-rows: 1fr 205px 205px 205px 1fr;
   }
 
   @media (max-width: 410px) {
-    max-width: 205px;
-    height: auto;
-    margin: 30px 0;
-  }
-
-  @media (max-height: 450px) {
-    margin: 30px 0;
-    height: auto;
+    grid-template-areas: 
+    ".        .       ." 
+    ". content_blue   ."
+    ". content_green  ."
+    ". content_purple ."
+    ". content_yellow ."
+    ". content_red    ."
+    ". content_pink   ."
+    ".        .       .";
+    grid-template-columns: 1fr 205px 1fr;
+    grid-template-rows: 1fr 205px 205px 205px 205px 205px 205px 1fr;
   }
 }
 
 .weather-forecast__content {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-content: center;
   align-items: center;
-
-  width: 205px;
-  height: 205px;
 }
 
 .weather-forecast__content_blue {
+  grid-area: content_blue;
   background-color: $blue;
+  box-shadow: $shadow-left, $shadow-top;
+
+  @media (max-width: 615px) {
+    box-shadow: $shadow-left, $shadow-top;
+  }
+
+  @media (max-width: 410px) {
+    box-shadow: $shadow-top, $shadow-left, $shadow-right;
+  }
 }
 
 .weather-forecast__content_green {
+  grid-area: content_green;
   background-color: $green;
+  box-shadow: $shadow-top;
+
+  @media (max-width: 615px) {
+    box-shadow: $shadow-right, $shadow-top;
+  }
+
+  @media (max-width: 410px) {
+    box-shadow: $shadow-left, $shadow-right;
+  }
 }
 
 .weather-forecast__content_purple {
+  grid-area: content_purple;
   background-color: $purple;
+  box-shadow: $shadow-top, $shadow-right;
+
+  @media (max-width: 615px) {
+    box-shadow: $shadow-left;
+  }
+
+  @media (max-width: 410px) {
+    box-shadow: $shadow-left, $shadow-right;
+  }
 }
 
 .weather-forecast__content_yellow {
+  grid-area: content_yellow;
   background-color: $yellow;
+  box-shadow: $shadow-left, $shadow-bottom;
+
+  @media (max-width: 615px) {
+    box-shadow: $shadow-right;
+  }
+
+  @media (max-width: 410px) {
+    box-shadow: $shadow-left, $shadow-right;
+  }
 }
 
 .weather-forecast__content_red {
+  grid-area: content_red;
   background-color: $red;
+  box-shadow: $shadow-bottom;
+
+  @media (max-width: 615px) {
+    box-shadow: $shadow-left, $shadow-bottom;
+  }
+
+  @media (max-width: 410px) {
+    box-shadow: $shadow-left, $shadow-right;
+  }
 }
 
 .weather-forecast__content_pink {
+  grid-area: content_pink;
   background-color: $pink;
+  box-shadow: $shadow-bottom, $shadow-right;
+
+  @media (max-width: 615px) {
+    box-shadow: $shadow-right, $shadow-bottom;
+  }
+
+  @media (max-width: 410px) {
+    box-shadow: $shadow-bottom, $shadow-left, $shadow-right;
+  }
 }
 
 .weather-forecast__content:hover {

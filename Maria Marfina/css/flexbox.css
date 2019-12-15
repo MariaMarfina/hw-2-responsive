@@ -53,8 +53,8 @@ body {
   height: 410px;
   margin-top: auto;
   margin-bottom: auto;
-  -webkit-box-shadow: 0 0 100px 30px black;
-          box-shadow: 0 0 100px 30px black; }
+  -webkit-box-shadow: 0px 0 10px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0 10px 10px rgba(0, 0, 0, 0.3); }
   @media (max-width: 615px) {
     .weather-forecast {
       max-width: 410px; } }
